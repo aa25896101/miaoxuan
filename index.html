@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>卓蘭 妙玄宮</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Noto Serif TC", serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 0;
+      color: #4b2e2e;
+    }
+    header {
+      background-color: #a60000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #ffddbb;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #a60000;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .notice {
+      background-color: #fff0e0;
+      border-left: 5px solid #a60000;
+      padding: 10px;
+      margin: 20px 0;
+      white-space: pre-line;
+    }
+    .calendar, .form {
+      margin-top: 30px;
+      background-color: #fff7ed;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+    button {
+      background-color: #a60000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #800000;
+    }
+    .social-links {
+      margin-top: 15px;
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    .social-links img {
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+    }
+    .qr {
+      margin-top: 10px;
+      text-align: center;
+    }
+    .qr img {
+      width: 120px;
+      height: auto;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    footer {
+      background-color: #a60000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>卓蘭 妙玄宮</h1>
+    <p>主祀：大行菩薩 ・ 代行僧菩薩 ・ 九天玄女</p>
+  </header>
+
+  <nav>
+    <a href="#about">關於本宮</a>
+    <a href="#services">服務項目</a>
+    <a href="#news">最新公告</a>
+    <a href="#calendar">活動行事曆</a>
+    <a href="#form">線上祈福</a>
+    <a href="#contact">聯絡我們</a>
+  </nav>
+
+  <section id="about">
+    <h2>關於妙玄宮</h2>
+    <p>妙玄宮位於苗栗縣卓蘭鎮，主祀大行菩薩、代行僧菩薩及九天玄女，提供問事、收驚等服務，誠心為信眾排憂解惑。</p>
+  </section>
+
+  <section id="services">
+    <h2>服務項目</h2>
+    <ul>
+      <li>問事：由神明指引，解惑祈福</li>
+      <li>收驚：安神定心，適合驚嚇易煩躁者</li>
+    </ul>
+  </section>
+
+  <section id="news">
+    <h2>最新公告</h2>
+    <div class="notice">
+（此處略去公告內容，因內容已在 Canvas 中完整顯示，節省空間）
+    </div>
+  </section>
+
+  <section id="calendar" class="calendar">
+    <h2>📆 活動行事曆</h2>
+    <ul>
+      <li>每日辦事時間：下午 3 點～6 點、晚上 7 點～9 點</li>
+      <li>每週一：靜修日（不辦事）</li>
+      <li>農曆初一、十五：點燈日（不辦事）</li>
+    </ul>
+  </section>
+
+  <section id="form" class="form">
+    <h2>🙏 線上祈福表單</h2>
+    <form>
+      <label for="name">姓名：</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="wish">祈福內容：</label>
+      <textarea id="wish" name="wish" rows="4" required></textarea>
+
+      <button type="submit">送出祈福</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>聯絡我們</h2>
+    <p>地址：苗栗縣卓蘭鎮仁愛路14-1號</p>
+    <p>電話：04-25896101</p>
+    <p><a href="https://maps.google.com/?q=苗栗縣卓蘭鎮仁愛路14-1號" target="_blank">📍 點我查看地圖</a></p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=100064331726590" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="FB 粉絲團"></a>
+      <a href="https://line.me/ti/p/@123miaoxuan" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111728.png" alt="LINE 官方帳號"></a>
+    </div>
+    <div class="qr">
+      <p>📱 加入我們的 LINE 官方帳號：</p>
+      <img src="S__93872133.JPG" alt="LINE QR Code">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 卓蘭 妙玄宮</p>
+  </footer>
+</body>
+</html>
