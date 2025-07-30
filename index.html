@@ -6,57 +6,89 @@
   <title>卓蘭 妙玄宮</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
   <style>
-    #floating-line-qr {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 80px;
-  height: auto;
-  z-index: 999;
-  cursor: pointer;
-  border: 2px solid #a60000;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  background-color: white;
-  padding: 4px;
-}
-
-#qr-modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.6);
-}
-
-#qr-modal img {
-  display: block;
-  max-width: 90%;
-  max-height: 90%;
-  margin: 5% auto;
-  border-radius: 10px;
-  box-shadow: 0 0 15px #fff;
-  background-color: white;
-}
-
-#qr-modal:target {
-  display: block;
-}
     body {
-      <!-- 漂浮在右下角的 LINE QR Code -->
-<a href="#qr-modal">
-  <img id="floating-line-qr" src="S__93872133.JPG" alt="加入我們的 LINE 官方帳號 QR Code">
-</a>
-
-<!-- 點擊後放大的 QR Code 圖片 -->
-<div id="qr-modal">
-  <a href="#">
-    <img src="S__93872133.JPG" alt="LINE QR Code 大圖">
-  </a>
-</div>
+      font-family: "Noto Serif TC", serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 0;
+      color: #4b2e2e;
+    }
+    header {
+      background-color: #a60000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #ffddbb;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #a60000;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .notice {
+      background-color: #fff0e0;
+      border-left: 5px solid #a60000;
+      padding: 10px;
+      margin: 20px 0;
+      white-space: pre-line;
+    }
+    .calendar, .form {
+      margin-top: 30px;
+      background-color: #fff7ed;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+    button {
+      background-color: #a60000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #800000;
+    }
+    .social-links {
+      margin-top: 15px;
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    .social-links img {
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+    }
+    .qr {
+      margin-top: 10px;
+      text-align: center;
+    }
+    .qr img {
+      width: 120px;
+      height: auto;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
     footer {
       background-color: #a60000;
       color: white;
